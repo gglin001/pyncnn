@@ -1,6 +1,10 @@
 # pyncnn
 python wrapper of [ncnn](https://github.com/Tencent/ncnn) with [pybind11](https://github.com/pybind/pybind11), only support python3.x now.
 
+## APPEND
+
+本版本基于修改版的 ncnn(https://github.com/gglin001/ncnn), 将 ncnn 中各 layer 都做了对应的 python 映射
+
 ## Prerequisites
 
 **On Unix (Linux, OS X)**

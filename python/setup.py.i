@@ -15,9 +15,9 @@ requirements = [
 setup(
   name          = 'ncnn',
   version       = '${PACKAGE_VERSION}',
-  url           = 'https://github.com/caishanli/pyncnn',
+  url           = 'https://github.com/gglin001/pyncnn',
   packages      = find_packages(),
   package_dir   = {'': '.'},
-  package_data  = {'ncnn': ['ncnn${PYTHON_MODULE_PREFIX}${PYTHON_MODULE_EXTENSION}']},
+  package_data  = {'ncnn': ['ncnn.*.so', 'ncnn.*.pyd', 'ncnn.*.dll']},
   install_requires = requirements
 )
