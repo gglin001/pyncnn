@@ -1697,4 +1697,13 @@ PYBIND11_MODULE(ncnn, m)
         // ncnn::Layer* softmax; TODO
 
         LAYER_COMMON;
+
+    py::class_<Gemm_final, Layer>(m, "Gemm")
+        .def(py::init<>())
+        .def_readwrite("alpha", &Gemm_final::alpha)
+        .def_readwrite("beta", &Gemm_final::beta)
+        .def_readwrite("transA", &Gemm_final::transA)
+        .def_readwrite("transB", &Gemm_final::transB)
+
+            LAYER_COMMON;
 }
